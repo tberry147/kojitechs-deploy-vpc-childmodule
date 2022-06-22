@@ -20,7 +20,8 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = var.region
-  # profile = "default"
+  
+  profile = "default"
   assume_role {
     # role_arn = "arn:aws:iam::056433689356:role/Terraform_Admin_Role"
     role_arn = "arn:aws:iam::${lookup(var.env, terraform.workspace)}:role/Terraform_Admin_Role"
@@ -32,8 +33,5 @@ provider "aws" {
 
 }
 
-variable "env" {
-  description = "List of All environment"
-  type        = map(string)
- 
-}
+
+

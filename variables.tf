@@ -50,3 +50,9 @@ variable "db_sub_az" {
   type = list
   default = []
 }
+
+variable "env" {
+  description = "List of All environment"
+  type        = map(string)
+ 
+}
