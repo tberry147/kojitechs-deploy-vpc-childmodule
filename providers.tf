@@ -4,7 +4,7 @@ terraform {
 
   backend "s3" {
     bucket         = "ops-kojitechs-deploy-vpc"
-    dynamodb_table = "terraform-lock"
+    # dynamodb_table = "terraform-lock"
     key            = "path/env"
     region         = "us-east-1"
     encrypt        = "true"
@@ -20,7 +20,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = var.region
-  
+
   profile = "default"
   assume_role {
     # role_arn = "arn:aws:iam::056433689356:role/Terraform_Admin_Role"
