@@ -4,7 +4,7 @@ terraform {
 
   backend "s3" {
     bucket         = "ops-kojitechs-deploy-vpc"
-    # dynamodb_table = "terraform-lock"
+    dynamodb_table = "terraform-lock"
     key            = "path/env"
     region         = "us-east-1"
     encrypt        = "true"
