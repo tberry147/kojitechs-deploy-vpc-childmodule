@@ -3,7 +3,7 @@
 
 module "networking" {
 #   source = "../"
-    source = "git::https://github.com/tberry147/operational_environment_network.git?ref=v1.1.0"
+    source = "git::https://github.com/tberry147/operational_environment_network.git?ref=v1.0.0"
 
   cidr_block = var.vpc_cidr
   pub_subs   = var.public_sub
