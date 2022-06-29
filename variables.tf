@@ -54,5 +54,4 @@ variable "db_sub_az" {
 variable "env" {
   description = "List of All environment"
   type        = map(string)
- 
 }
