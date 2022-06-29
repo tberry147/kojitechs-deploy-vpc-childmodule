@@ -1,7 +1,7 @@
 
 name: "Terraform Deployment APPLY"
 
-on: [main]
+on: [push]
   # workflow_dispatch:
   # push:
   #   paths:
@@ -19,8 +19,8 @@ jobs:
          include:
            - environment: sandbox
              runner: ubuntu-latest
-           - environment: dev
-             runner: ubuntu-18.04             
+          #  - environment: dev
+          #    runner: ubuntu-18.04             
 
     env:
          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
