@@ -1,7 +1,13 @@
 
-name: "Terraform Deployment"
+name: "Terraform Deployment APPLY"
 
 on: [push]
+  # workflow_dispatch:
+  # push:
+  #   paths:
+  #     - '/*'
+  # pull_request:
+  #   branches: [main]
 
 jobs:
   terraform:

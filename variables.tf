@@ -51,8 +51,8 @@ variable "db_sub_az" {
   default = []
 }
 
-# variable "env" {
-#   description = "List of All environment"
-#   type        = map(string)
+variable "env" {
+  description = "List of All environment"
+  type        = map(string)
  
-# }
+}
